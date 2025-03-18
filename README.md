@@ -1,62 +1,66 @@
-Image Steganography Application
+# Image Steganography Application
 
-Overview:
-
+## Overview
 This is a Python-based Image Steganography Application built using Tkinter for GUI and OpenCV for image processing. It allows users to securely hide messages within images using the Least Significant Bit (LSB) technique and later retrieve them using a password.
 
-Features:
+## Features
+- **Modern GUI** with stylish buttons and entry fields
+- **Image Selection** to choose an image for encryption or decryption
+- **Message Encryption**: Hide a secret message inside an image
+- **Message Decryption**: Extract the hidden message from an encrypted image
+- **Password Protection**: Ensures secure access to the hidden message
+- **Error Handling**: Provides alerts for invalid operations
 
-Modern GUI with stylish buttons and entry fields
-Image Selection to choose an image for encryption or decryption
-Message Encryption: Hide a secret message inside an image
-Message Decryption: Extract the hidden message from an encrypted image
-Password Protection: Ensures secure access to the hidden message
-Error Handling: Provides alerts for invalid operations
+## Technologies Used
+- **Python** (Programming Language)
+- **Tkinter** (Graphical User Interface)
+- **OpenCV** (Image Processing)
+- **PIL (Pillow)** (Image Handling)
+- **NumPy** (Array Manipulation)
 
-Technologies Used:
-Python (Programming Language)
-Tkinter (Graphical User Interface)
-OpenCV (Image Processing)
-PIL (Pillow) (Image Handling)
-NumPy (Array Manipulation)
-Installation
+## Installation
 
-Prerequisites:
+### Prerequisites
 Ensure you have Python 3.x installed. You also need to install the required dependencies:
+```bash
 pip install opencv-python numpy pillow
+```
 
-How to Run?
-Clone or download this repository.
-Navigate to the project directory.
+### How to Run
+1. Clone or download this repository.
+2. Navigate to the project directory.
+3. Run the following command:
+   ```bash
+   python steganography.py
+   ```
+4. The GUI window will open.
 
-Run the following command:
-python steganography.py
-The GUI window will open.
+## Usage
 
-Usage:
-1. Select an Image
-Click Select Image to choose an image.
-The image will be displayed in the application.
+### Select an Image
+1. Click **Select Image** to choose an image.
+2. The image will be displayed in the application.
 
-2. Encrypt a Message
-Click Encrypt Message.
-Enter the secret message and a password.
-Click Encrypt & Save to hide the message inside the image.
+### Encrypt a Message
+1. Click **Encrypt Message**.
+2. Enter the secret message and a password.
+3. Click **Encrypt & Save** to hide the message inside the image.
 
-3. Decrypt a Message
-Click Decrypt Message.
-Enter the correct password.
-The hidden message will be displayed.
+### Decrypt a Message
+1. Click **Decrypt Message**.
+2. Enter the correct password.
+3. The hidden message will be displayed.
 
-File Structure:
+## File Structure
+```
+├── steganography.py     # Main application script
+├── encrypted_image.png  # Encrypted output image
+├── README.md            # Documentation
+```
 
-├── steganography.py      # Main application script
-├── encrypted_image.png   # Encrypted output image
-├── README.md             # Documentation
+## Limitations
+- The image size should be large enough to store the message.
+- If the password is incorrect, decryption will be denied.
 
-Limitations:
-The image size should be large enough to store the message.
-If the password is incorrect, decryption will be denied.
-
-License:
-This project is open-source and free to use under the MIT License.
+## License
+This project is open-source and free to use under the **MIT License**.
